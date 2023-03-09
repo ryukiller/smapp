@@ -77,7 +77,7 @@ export const listNetworksByRequest = () =>
       () => fromDiscovery().pipe(map((nets) => handlerResult(nets))),
       (nets) => nets
     ),
-    (_) => {}
+    () => {}
   );
 
 export const listPublicApisByRequest = ($wallet: Subject<Wallet | null>) =>
